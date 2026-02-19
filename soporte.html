@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - Víctor Manzano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/soporte.css">
+</head>
+
+<body>
+    <!-- Header con Menú (idéntico al original) -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Víctor<span>Manzano</span></a>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Biografía</a></li>
+                <li class="dropdown" id="dropdownMenu">
+                    <a href="index.html#habilidades" class="dropdown-toggle">Habilidades</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#habilidades-blandas">Habilidades Blandas</a>
+                        <a href="index.html#habilidades-duras">Habilidades Duras</a>
+                    </div>
+                </li>
+                <li><a href="index.html#experiencia">Experiencia</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="soporte.html" style="color: var(--secondary);"><i class="fas fa-headset"></i> Soporte
+                        Técnico</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Sección de la Tabla de Soporte -->
+    <section id="soporte" style="padding-top: 2rem;">
+        <div class="container">
+            <h2 class="section-title">Mesa de Ayuda - Niveles de Soporte</h2>
+            <div class="table-responsive">
+                <table class="soporte-table">
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Rol Principal</th>
+                            <th>Incidencias (Ejemplos)</th>
+                            <th>Diagnósticos</th>
+                            <th>Soluciones</th>
+                            <th>Recursos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nivel 1</td>
+                            <td>Soporte Básico / Mesa de Ayuda</td>
+                            <td>
+                                <ul>
+                                    <li>"Olvidé mi contraseña"</li>
+                                    <li>"La impresora no responde"</li>
+                                    <li>"Cómo configurar mi correo"</li>
+                                </ul>
+                            </td>
+                            <td>Verificación de identidad, revisión de conexiones básicas, comprobación de configuración
+                                de software estándar.</td>
+                            <td>Restablecimiento de contraseñas, reinicio de equipos, reinstalación de drivers básicos,
+                                guías paso a paso.</td>
+                            <td>Base de conocimientos, scripts de reinicio, herramientas de acceso remoto básico (ej.
+                                TeamViewer).</td>
+                        </tr>
+                        <tr>
+                            <td>Nivel 2</td>
+                            <td>Soporte Técnico Especializado</td>
+                            <td>
+                                <ul>
+                                    <li>"Configurar VPN para acceso remoto"</li>
+                                    <li>"Optimizar consultas SQL lentas"</li>
+                                    <li>"Configurar firewall corporativo"</li>
+                                </ul>
+                            </td>
+                            <td>Análisis de logs de red, revisión de permisos, pruebas de conectividad avanzada,
+                                profiling de consultas.</td>
+                            <td>Reconfiguración de VPN, optimización de índices en BD, ajustes en reglas de firewall,
+                                parcheo de software.</td>
+                            <td>Consolas de administración (firewall, VPN), analizadores de consultas SQL, documentación
+                                técnica.</td>
+                        </tr>
+                        <tr>
+                            <td>Nivel 3</td>
+                            <td>Desarrollo / Ingeniería / Seguridad</td>
+                            <td>
+                                <ul>
+                                    <li>"Corregir vulnerabilidad de seguridad"</li>
+                                    <li>"Optimizar algoritmo de búsqueda"</li>
+                                    <li>"Desarrollar nuevo módulo"</li>
+                                </ul>
+                            </td>
+                            <td>Análisis de código fuente, pruebas de penetración, revisión de arquitectura,
+                                identificación de cuellos de botella.</td>
+                            <td>Parches de seguridad, refactorización de código, implementación de nuevos endpoints,
+                                actualización de librerías.</td>
+                            <td>Entornos de desarrollo (IDEs), repositorios de código (Git), herramientas de análisis de
+                                código (SonarQube).</td>
+                        </tr>
+                        <tr>
+                            <td>Nivel 4</td>
+                            <td>Soporte de Proveedor / Fabricante</td>
+                            <td>
+                                <ul>
+                                    <li>"Falla en disco duro de servidor Dell"</li>
+                                    <li>"Problema de licenciamiento SQL Server"</li>
+                                    <li>"Configurar switch Cisco a nivel avanzado"</li>
+                                </ul>
+                            </td>
+                            <td>Diagnóstico con herramientas propietarias, verificación de garantías, análisis de logs
+                                de hardware/firmware.</td>
+                            <td>Reemplazo de piezas (RMA), actualización de licencias, configuración avanzada con
+                                asistencia del fabricante.</td>
+                            <td>Garantías y contratos de soporte, herramientas de diagnóstico del fabricante (Dell
+                                OpenManage, Cisco IOS).</td>
+                        </tr>
+                        <tr class="nivel-5">
+                            <td>Nivel 5</td>
+                            <td>Gestión del Conocimiento / Mejora Continua</td>
+                            <td>
+                                <ul>
+                                    <li>Documentar procesos y soluciones recurrentes</li>
+                                    <li>Capacitar al equipo en nuevas tecnologías</li>
+                                    <li>Proponer mejoras en la infraestructura</li>
+                                </ul>
+                            </td>
+                            <td>Análisis de tendencias de incidencias, identificación de brechas de conocimiento,
+                                evaluación de nuevas herramientas.</td>
+                            <td>Creación de bases de conocimiento, planes de capacitación, informes ejecutivos con
+                                propuestas de mejora.</td>
+                            <td>Plataformas de documentación (Confluence), herramientas de e-learning, software de
+                                gestión de proyectos (Jira).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; font-style: italic; color: #666;">
+                * Los niveles de soporte representan la escalabilidad y especialización en la resolución de incidencias
+                técnicas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Víctor Rafael Manzano Aguiar. Todos los derechos reservados.</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Portafolio personal - Desarrollado con HTML, CSS y
+                JavaScript</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mismo script para el menú responsivo
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        if (dropdownMenu) {
+            dropdownMenu.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdownMenu.classList.toggle('active');
+                }
+            });
+        }
+
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navMenu.classList.remove('active');
+                    if (dropdownMenu) {
+                        dropdownMenu.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
